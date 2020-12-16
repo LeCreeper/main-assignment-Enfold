@@ -1,0 +1,31 @@
+
+
+//Ensures Heading is centered
+.el_after_av_section {
+    margin-left: 25% !important;
+
+    //adjusts heading
+    .av_textblock_section h2 {
+        //font-size: $font-size-H2;
+        line-height: 50px;
+    }
+
+    //adjusts the description text slightly to the left
+    //and lets it surpass the headers width on the right
+    .av_textblock_section p  {
+        width: 130% !important;
+        margin-left: -12.5% !important;
+        //font-size: 14px;
+        //font-size: $font-size-P;
+    }
+
+    //Styles the button
+    .avia-button {
+        width: 250px !important;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+}

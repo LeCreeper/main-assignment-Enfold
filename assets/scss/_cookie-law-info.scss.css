@@ -1,0 +1,29 @@
+/* =============================================================================
+   Cookiebar Modifications
+   ========================================================================== */
+
+#cookie-law-info-bar {
+	width: 85px;
+	margin: 0 40px;
+	border-top-color: $color-orange !important;
+}
+
+#cookie_action_close_header {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: $font-body;
+}
+
+#cookie-law-info-again {
+	left: 40px !important;
+}
+
+.cli-plugin-button, .cli-plugin-button:visited {
+	-webkit-box-shadow: none;
+	border: none;
+	@include border-radius(50%);
+	width: 39px;
+	height: 39px;
+	padding-top: 13px;
+	font-family: $font-body;
+}

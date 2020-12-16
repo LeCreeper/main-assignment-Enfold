@@ -1,0 +1,99 @@
+/* =============================================================================
+   Menu and Uber Menu 3 Overrides for Enfold
+   ========================================================================== */
+
+.av_main_nav_header.av_menu_right #header_main .main_menu-uber{ 
+  clear:none; 
+  position: absolute; 
+  z-index: 100; 
+  line-height:30px; 
+  height:100%; 
+  margin:0; 
+  right:0; 
+}
+
+.av_main_nav_header.av_menu_left #header_main .main_menu-uber{
+  clear:none; 
+  position: absolute; 
+  z-index: 100; 
+  line-height:30px; 
+  height:100%; 
+  margin:0; 
+  left:0;
+  right:auto; 
+}
+
+
+
+/* Menu left or right, slim */
+.av_main_nav_header .ubermenu .ubermenu-item-level-0 > .ubermenu-target{
+  padding-top:36px;
+  padding-bottom:36px;
+}
+ 
+/* Menu left or right, large */
+.av_main_nav_header.av_large .ubermenu .ubermenu-item-level-0 > .ubermenu-target{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+ 
+/* Menu left or right, scrolled */
+.av_main_nav_header.header-scrolled .ubermenu .ubermenu-item-level-0 > .ubermenu-target{
+  padding-top:14px;
+  padding-bottom:14px;
+}
+
+.ubermenu #menu-item-search{
+  display:none;
+}
+
+#header_main,
+#header_main .main_menu-uber .ubermenu{
+  border-top:none;
+}
+
+#header_main_alternate .main_menu-uber{
+    position:relative;
+}
+
+.av_bottom_nav_header #header_main,
+.av_bottom_nav_header #header_main_alternate{
+  border-bottom:none;
+}
+
+@media screen and (max-width:999px){
+  #header_main .logo,
+  #header_main .main_menu-uber{
+    position:relative;
+    clear:both;
+  }
+  #header_main_alternate{
+    display:block !important;
+  }
+  #advanced_menu_toggle{
+    display:none !important;
+  }
+
+}
+ 
+/* Responsive Menu */
+@media only screen and (max-width: 767px) {
+    .ubermenu .ubermenu-item-level-0 > .ubermenu-target{
+        padding-top:15px !important;
+        padding-bottom:15px !important;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+  .av_main_nav_header.av_menu_right #header_main .main_menu-uber{
+    position:relative;
+  }
+  .av_main_nav_header.av_menu_right .ubermenu-responsive-toggle{
+    float:right;
+    margin-top:30px;
+  }
+  .av_main_nav_header.av_menu_right .ubermenu.ubermenu-main .ubermenu-item-level-0 > .ubermenu-target{
+    padding-top:15px;
+    padding-bottom:15px;
+  }
+}

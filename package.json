@@ -1,0 +1,28 @@
+{
+  "name": "enfold-child-theme",
+  "version": "1.0.0",
+  "description": "Enfold Child Theme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Yan&Co",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-curl": "^2.2.0",
+    "grunt-wp-i18n": "^0.5.4"
+  },
+  "main": "Gruntfile.js",
+  "dependencies": {}
+}

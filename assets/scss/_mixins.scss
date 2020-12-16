@@ -1,0 +1,92 @@
+@mixin list-style-image($imagepath) {
+  list-style-image: url($imagepath);
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin border-radius-all ($top, $right, $bottom, $left) {
+  -webkit-border-radius: $top $right $bottom $left;
+     -moz-border-radius: $top $right $bottom $left;
+      -ms-border-radius: $top $right $bottom $left;
+          border-radius: $top $right $bottom $left;
+}
+
+@mixin rotate( $degrees ) {
+  -webkit-transform: rotate(#{$degrees}deg);
+  -moz-transform: rotate(#{$degrees}deg);
+  -ms-transform: rotate(#{$degrees}deg);
+  -o-transform: rotate(#{$degrees}deg);
+  transform: rotate(#{$degrees}deg);
+
+  filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+  zoom: 1;
+}
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin screenMax($max) {
+  @media screen and (max-width: $max) {
+    @content;
+  }
+}
+@mixin screenMin($min) {
+  @media screen and (min-width: $min) {
+    @content;
+  }
+}
+
+@mixin screenBetween($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin minWmaxH($width, $height) {
+  @media screen and (min-width: $width) and (max-height: $height) {
+    @content;
+  }
+}
+@mixin minWminH($width, $height) {
+  @media screen and (min-width: $width) and (min-height: $height) {
+    @content;
+  }
+}
+@mixin maxWmaxH($width, $height) {
+  @media screen and (max-width: $width) and (max-height: $height) {
+    @content;
+  }
+}
+@mixin maxWminH($width, $height) {
+  @media screen and (max-width: $width) and (min-height: $height) {
+    @content;
+  }
+}
+@mixin orientation($orientation) {
+  @media screen and (orientation: $orientation) {
+    @content;
+  }
+}

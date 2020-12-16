@@ -1,0 +1,32 @@
+/* =============================================================================
+   Gravity Forms Overrides
+   ========================================================================== */
+
+.gf_label_none label {
+	display: none !important;
+}
+
+.gform_wrapper input[type=text],
+#top .gform_wrapper .ginput_complex input[type=text],
+.gform_wrapper input[type=url],
+.gform_wrapper input[type=email],
+.gform_wrapper input[type=tel],
+.gform_wrapper input[type=number],
+.gform_wrapper input[type=password],
+.gform_wrapper textarea, 
+.gform_wrapper select,
+.gform_wrapper input[type=radio],
+.gform_wrapper input[type=checkbox],
+.gform_wrapper input[type=file] {
+	
+}
+
+.gfield_description,
+.gfield_label,
+.gform_wrapper .gfield_checkbox label {
+	
+}
+
+.gform_wrapper .button.gform_button {
+
+}

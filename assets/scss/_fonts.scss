@@ -1,0 +1,79 @@
+
+//Variables holding font-sizes
+h1 {
+    font-size: 2.5vw;
+}
+h2 {
+    font-size: 2vw;
+}
+h3 {
+    font-size: 1.5vw;
+}
+p {
+    font-size: 1vw;
+}
+
+//Responsive text styling using Mixins
+@include screenMax(1280px) {
+    p {
+        font-size: 1.5vw !important;
+    }
+}
+@include screenMax(989px) {
+
+    h1{
+        font-size: 3.5vw !important;
+    } 
+    h2 {
+        font-size: 2.5vw !important;
+    }
+    p {
+        
+    }
+}
+@include screenMax(767px) {
+
+    h1{
+        font-size: 4vw !important;
+    } 
+
+    h2 {
+        font-size: 3vw !important;
+    }
+    
+    p {
+        font-size: 2vw !important;
+    }
+}
+
+@include screenMax(676px) {
+
+    h1{
+        font-size: 5vw !important;
+    } 
+
+    h2 {
+        font-size: 4vw !important;
+        line-height: 50px !important;
+    }
+    
+    p {
+        font-size: 2.7vw !important;
+    }
+}
+
+@include screenMax(480px) {
+
+    h1{
+        font-size: 6vw !important;
+    } 
+
+    h2 {
+        font-size: 5vw !important;
+    }
+    
+    p {
+        font-size: 3.5vw !important;
+    }
+}
+

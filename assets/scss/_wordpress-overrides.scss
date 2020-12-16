@@ -1,0 +1,32 @@
+/* =============================================================================
+   WordPress Overrides
+   ========================================================================== */
+
+.pull-center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.aligncenter {
+	margin: 0px auto;
+	float: none;
+}
+
+.alignright {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}

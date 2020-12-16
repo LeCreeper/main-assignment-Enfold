@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/*
+Theme Name:     Drotved Coding
+Theme URI:		
+Description:    Child theme for Enfold
+Author:         Drotved Coding
+Author URI:		
+Template:       enfold
+Version:        1.0
+*/
+@import url("../enfold/style.css");
+/* line 3, assets/scss/_fonts.scss */
+h1 {
+  font-size: 2.5vw;
+}
+
+/* line 6, assets/scss/_fonts.scss */
+h2 {
+  font-size: 2vw;
+}
+
+/* line 9, assets/scss/_fonts.scss */
+h3 {
+  font-size: 1.5vw;
+}
+
+/* line 12, assets/scss/_fonts.scss */
+p {
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 1280px) {
+  /* line 18, assets/scss/_fonts.scss */
+  p {
+    font-size: 1.5vw !important;
+  }
+}
+@media screen and (max-width: 989px) {
+  /* line 24, assets/scss/_fonts.scss */
+  h1 {
+    font-size: 3.5vw !important;
+  }
+
+  /* line 27, assets/scss/_fonts.scss */
+  h2 {
+    font-size: 2.5vw !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 36, assets/scss/_fonts.scss */
+  h1 {
+    font-size: 4vw !important;
+  }
+
+  /* line 40, assets/scss/_fonts.scss */
+  h2 {
+    font-size: 3vw !important;
+  }
+
+  /* line 44, assets/scss/_fonts.scss */
+  p {
+    font-size: 2vw !important;
+  }
+}
+@media screen and (max-width: 676px) {
+  /* line 51, assets/scss/_fonts.scss */
+  h1 {
+    font-size: 5vw !important;
+  }
+
+  /* line 55, assets/scss/_fonts.scss */
+  h2 {
+    font-size: 4vw !important;
+    line-height: 50px !important;
+  }
+
+  /* line 60, assets/scss/_fonts.scss */
+  p {
+    font-size: 2.7vw !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 67, assets/scss/_fonts.scss */
+  h1 {
+    font-size: 6vw !important;
+  }
+
+  /* line 71, assets/scss/_fonts.scss */
+  h2 {
+    font-size: 5vw !important;
+  }
+
+  /* line 75, assets/scss/_fonts.scss */
+  p {
+    font-size: 3.5vw !important;
+  }
+}
+/* =============================================================================
+   WordPress Overrides
+   ========================================================================== */
+/* line 5, assets/scss/_wordpress-overrides.scss */
+.pull-center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 11, assets/scss/_wordpress-overrides.scss */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 15, assets/scss/_wordpress-overrides.scss */
+.aligncenter {
+  margin: 0px auto;
+  float: none;
+}
+
+/* line 20, assets/scss/_wordpress-overrides.scss */
+.alignright {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* line 27, assets/scss/_wordpress-overrides.scss */
+.alignleft {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* =============================================================================
+   Gravity Forms Overrides
+   ========================================================================== */
+/* line 5, assets/scss/_gravity-forms-overrides.scss */
+.gf_label_none label {
+  display: none !important;
+}
+
+/* =============================================================================
+   Layout
+   ========================================================================== */
+/* line 5, assets/scss/_layout.scss */
+span.avia-menu-text {
+  text-transform: uppercase;
+}
+
+/* line 9, assets/scss/_layout.scss */
+ul#avia2-menu {
+  text-transform: uppercase;
+}
+
+/* line 6, assets/scss/_hero-område-enfold.scss */
+.av-zero-column-padding {
+  width: 54% !important;
+}
+/* line 12, assets/scss/_hero-område-enfold.scss */
+.av-zero-column-padding .avia_textblock h1, .av-zero-column-padding .avia_textblock h2 {
+  line-height: 65px;
+  text-transform: capitalize;
+}
+/* line 17, assets/scss/_hero-område-enfold.scss */
+.av-zero-column-padding .avia_textblock h2 {
+  font-weight: 400 !important;
+}
+
+/* line 4, assets/scss/_produkt-beskrivelses-område.scss */
+.el_after_av_section {
+  margin-left: 25% !important;
+}
+/* line 8, assets/scss/_produkt-beskrivelses-område.scss */
+.el_after_av_section .av_textblock_section h2 {
+  line-height: 50px;
+}
+/* line 15, assets/scss/_produkt-beskrivelses-område.scss */
+.el_after_av_section .av_textblock_section p {
+  width: 130% !important;
+  margin-left: -12.5% !important;
+}
+/* line 23, assets/scss/_produkt-beskrivelses-område.scss */
+.el_after_av_section .avia-button {
+  width: 250px !important;
+}
+/* line 26, assets/scss/_produkt-beskrivelses-område.scss */
+.el_after_av_section .avia-button span {
+  font-size: 20px;
+}
